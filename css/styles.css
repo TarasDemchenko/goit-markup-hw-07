@@ -81,18 +81,21 @@ a {
 }
 
 .container {
-    width: 1158px;
-    padding: 0 15px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: 0 auto;
+
 }
 
-.section {
+/* .section {
     padding-top: 120px;
     padding-bottom: 120px;
-}
+} */
 
 /* ---Header---*/
-.header {
+
+/* .header {
     display: flex;
 }
 
@@ -108,10 +111,10 @@ a {
 
 .site-nav .item:not(:last-child) {
     margin-right: 40px;
-}
+} */
 
-.header-link {
-    /* position: relative; */
+/* .header-link {
+
     color: var(--dark);
     text-decoration: none;
     font-weight: 500;
@@ -123,13 +126,13 @@ a {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-}
+} */
 
-.header-link:hover,
+/* .header-link:hover,
 .header-link:focus {
     color: var(--pressed-state);
     text-decoration: none;
-}
+} */
 
 /* .header-link::after {
     content: '';
@@ -153,7 +156,7 @@ a {
     opacity: 1;
 } */
 
-.current {
+/* .current {
     color: var(--primary-brand);
 
 }
@@ -234,7 +237,8 @@ a {
 }
 
 /* ------------main----------- */
-.box-order {
+
+/* .box-order {
     text-align: center;
 }
 
@@ -285,9 +289,9 @@ a {
     height: 600px;
     margin: 0 auto;
 
-}
+} */
 
-.box-order {
+/* .box-order {
     padding: 188px 0;
 }
 
@@ -300,11 +304,11 @@ a {
     width: 496px;
     margin: 0 auto;
     margin-bottom: 48px;
-}
-
-
+} */
+*/
 /* -----section skils------ */
-.contein {
+
+/* .contein {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -342,11 +346,11 @@ a {
     color: var(--text);
     letter-spacing: 0.02em;
     width: 264px;
-}
+} */
 
 /* -------section what are we doing-------- */
 
-.title-item {
+/* .title-item {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -367,9 +371,11 @@ a {
 
 .future-rezult>.list:not(:last-child) {
     margin-right: 24px;
-}
+} */
 
 /* --------section Our team-------- */
+
+/* 
 .content-title {
     background-color: var(--light);
 
@@ -398,9 +404,9 @@ a {
 .future-education {
     margin-top: 8px;
     margin-bottom: 8px;
-}
+} */
 
-.content-find {
+/* .content-find {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -429,11 +435,11 @@ a {
 .content-item {
     width: 16px;
     height: 16px;
-}
+} */
 
 /* /* ------Customers---------- */
 
-.clients-item {
+/* .clients-item {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -441,15 +447,15 @@ a {
     text-align: center;
     letter-spacing: 0.02em;
 
-}
+} */
 
-.clients-choice {
+/* .clients-choice {
     display: flex;
     justify-content: center;
     margin-top: 72px;
-}
+} */
 
-.clients-choice>.list:not(:last-child) {
+/* .clients-choice>.list:not(:last-child) {
     margin-right: 24px;
 }
 
@@ -479,10 +485,10 @@ a {
 .clients:hover,
 .clients:focus {
     color: var(--pressed-state);
-}
+} */
 
 /* -------------footer----------- */
-.subtitle {
+/* .subtitle {
     font-size: 16px;
     line-height: 1.5;
     color: var(--accent);
@@ -494,10 +500,10 @@ a {
 .footer-main {
     padding: 100px 0;
     background: var(--dark);
-}
+} */
 
 /* ------content footer------------ */
-
+/* 
 .footer-contein {
     display: flex;
 }
@@ -543,11 +549,11 @@ a {
 .content-footer-link:hover,
 .content-footer-link:focus {
     background-color: #31D0AA;
-}
+} */
 
 /* -------Portfolio_______ */
 
-header {
+/* header {
     border-bottom: 1px solid #E7E9FC;
     border-top: 0;
 
@@ -668,9 +674,11 @@ header {
 .future-card:hover .content-overlay,
 .future-card:focus .content-overlay {
     transform: translateY(0);
-}
+} */
 
 /* -----------backdrop-------- */
+
+/* 
 .backdrop {
     position: fixed;
     z-index: 100;
@@ -741,11 +749,11 @@ header {
 .backdrop-btn:hover,
 .backdrop-btn:focus {
     fill: var(--white-color);
-}
+} */
 
 /* ------------Form------------------- */
 
-.form-header {
+/* .form-header {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -913,10 +921,11 @@ header {
 .form-btn:focus,
 .form-btn:hover {
     background-color: var(--pressed-state);
-}
+} */
 
 /* --------foter email----- */
 
+/* 
 .subscribe-form {
     margin-left: 80px;
 }
@@ -975,7 +984,8 @@ header {
     transform: translateY(-50%);
     width: 24px;
     height: 20px;
-}
+} */
+
 
 .subscribe-btn:hover,
 .subscribe-btn:focus {
