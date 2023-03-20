@@ -84,7 +84,7 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .mobile-menu.is-open {
+    .mobile-menu.is-hidden-o {
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
@@ -176,13 +176,13 @@
         padding-top: 40px;
     }
 
-    .content-find {
+    .content-find-mobile {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 56px;
         padding-top: 48px;
-        padding-left: 40px;
+
     }
 
     .content-link {
@@ -306,7 +306,7 @@
     }
 
     .future>.list:not(:first-child) {
-        margin-top: 72px;
+        padding-top: 72px;
     }
 
 
@@ -359,7 +359,7 @@
     }
 
     .future-team>.list {
-        margin-top: 72px;
+        padding-top: 72px;
     }
 
     .about-team {
@@ -431,12 +431,13 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin-top: 72px;
+        padding-top: 72px;
+        padding-bottom: 96px;
         gap: 16px;
     }
 
     .clients-choice>.list:nth-child(n+3) {
-        margin-top: 48px;
+        padding-top: 48px;
     }
 
     .clients {
@@ -469,7 +470,21 @@
 
     /* ------Customers---------- */
     /* ------------FOOTER--------- */
+    .footer-contein {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 72px;
+    }
+
+    .footer-text {
+        display: block;
+        text-align: center;
+    }
+
     .logo-bottom {
+        text-align: center;
         font-family: 'Raleway';
         font-weight: 800;
         font-size: 18px;
@@ -477,15 +492,19 @@
         color: var(--light);
         text-decoration: none;
         text-transform: uppercase;
+
     }
 
     .subtitle {
+        text-align: center;
         font-size: 16px;
         line-height: 1.5;
         color: var(--accent);
         letter-spacing: 0.02em;
-        width: 264px;
-        margin-top: 16px;
+        width: 268px;
+        height: 72px;
+        padding-top: 17px;
+
     }
 
     .footer-main {
@@ -493,20 +512,10 @@
         background: var(--dark);
     }
 
-    .footer-contein {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .content-footer {
-        margin-left: 120px;
-    }
-
     .content-footer-item {
         display: flex;
         gap: 16px;
+        padding-top: 16px;
     }
 
     .content-footer-link {
@@ -524,6 +533,7 @@
     }
 
     .content-footer-name {
+        text-align: center;
         font-family: 'Roboto';
         font-weight: 500;
         font-size: 16px;
@@ -543,8 +553,10 @@
         background-color: #31D0AA;
     }
 
+    /* ---------SUBSCRIBE-------- */
     .subscribe-form {
-        margin-left: 80px;
+        text-align: center;
+
     }
 
     .subscribe-blok {
@@ -561,6 +573,7 @@
         letter-spacing: 0.02em;
         color: #FFFFFF;
         margin-bottom: 16px;
+
     }
 
     .subscribe-in::placeholder {
@@ -568,7 +581,7 @@
     }
 
     .subscribe-in {
-        width: 264px;
+        width: 398px;
         height: 40px;
         outline: none;
         border: 1px solid #FFFFFF;
@@ -581,13 +594,18 @@
 
     .subscribe-btn {
         position: relative;
+        display: flex;
+        margin: auto;
         padding: 8px 64px 8px 24px;
+        width: 165px;
         background-color: var(--primary-brand);
         line-height: 1.5;
         letter-spacing: 0.04em;
         color: #FFFFFF;
-        margin-left: 24px;
         cursor: pointer;
+        margin-top: 16px;
+
+
 
         transition-property: background-color;
         transition-duration: 250ms;
@@ -608,4 +626,6 @@
     .subscribe-btn:focus {
         background-color: var(--pressed-state);
     }
+
+    /* ------------FOOTER--------- */
 }

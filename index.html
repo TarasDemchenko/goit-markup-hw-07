@@ -33,7 +33,7 @@
 						<li class="item"><a href="./portfolio.html" class="header-link-tablet">Contacts</a></li>
 					</ul>
 				</nav>
-				<button type="button" class="mobile-menu-open" js-open-menu>
+				<button type="button" class="mobile-menu-open" data-modal-open-o>
 					<svg class="mobile-menu-open-icon">
 						<use href="./images/symbol.svg#icon-icon-menu"></use>
 					</svg>
@@ -45,9 +45,9 @@
 					</ul>
 				</address>
 			</div>
-			<div class="mobile-menu" js-menu-container>
+			<div class="mobile-menu" data-modal-o>
 				<div class="container mobile-menu-container">
-					<button class="mobile-menu-close" js-close-menu>
+					<button class="mobile-menu-close" data-modal-close-o>
 						<svg class="mobile-menu-close-icon">
 							<use href="./images/symbol.svg#icon-close"></use>
 						</svg>
@@ -61,7 +61,7 @@
 						<li class="item"><a href="mailto:info@devstudio.com" class="auth-nav-link-mail">info@devstudio.com</a></li>
 						<li class="item-tel"><a href="tel:+110001111111" class="auth-nav-link-tel">+11 (000) 111-11-11</a></li>
 					</ul>
-					<ul class="content-find">
+					<ul class="content-find-mobile">
 						<li>
 							<a href="" class="content-link">
 								<svg class="content-item">
@@ -347,7 +347,7 @@
 				</div>
 			</section>
 			<!-- CLIENTS -->
-			<section class="section">
+			<section class="section section-clients">
 				<div class="container">
 					<h2 class="clients-item">Customers</h2>
 					<ul class="clients-choice">
@@ -396,7 +396,7 @@
 		<!-- basement -->
 		<footer class="footer-main">
 			<div class="container footer-contein">
-				<div>
+				<div class="footer-text">
 					<a href="./index.html" class="logo-bottom"><span class="logo">Web</span>Studio</a>
 					<p class="subtitle">
 						Increase the flow of customers and sales for your business with digital marketing & growth solutions.
@@ -438,7 +438,7 @@
 				<form class="subscribe-form">
 					<p class="subscribe-text">Subscribe</p>
 					<div class="subscribe-blok">
-						<label>
+						<label class="subscribe-label">
 							<input type="email" name="email" class="subscribe-in" placeholder="E-mail" />
 						</label>
 						<button type="submit" class="subscribe-btn">
@@ -499,15 +499,8 @@
 				</form>
 			</div>
 		</div>
-		<script
-			defer
-			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-			crossorigin="anonymous"
-		>
-			</script
-					<script src="./modal.js">
-		</script>
+
+		<script src="./modal.js"></script>
 		<script src="./mobile-menu.js"></script>
 	</body>
 </html>

@@ -442,6 +442,18 @@
         margin-top: 16px;
     }
 
+    .logo-bottom {
+        text-align: center;
+        font-family: 'Raleway';
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.7;
+        color: var(--light);
+        text-decoration: none;
+        text-transform: uppercase;
+
+    }
+
     .footer-main {
         padding: 100px 0;
         background: var(--dark);
