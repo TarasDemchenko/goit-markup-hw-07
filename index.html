@@ -28,12 +28,12 @@
 				<nav class="main-nav">
 					<a href="./index.html" class="logo-next"><span class="logo">Web</span>Studio</a>
 					<ul class="site-nav">
-						<li class="item"><a href="./portfolio.html" class="header-link current">Studio</a></li>
-						<li class="item"><a href="./portfolio.html" class="header-link">Portfolio</a></li>
-						<li class="item"><a href="./portfolio.html" class="header-link">Contacts</a></li>
+						<li class="item"><a href="./portfolio.html" class="header-link-tablet current">Studio</a></li>
+						<li class="item"><a href="./portfolio.html" class="header-link-tablet">Portfolio</a></li>
+						<li class="item"><a href="./portfolio.html" class="header-link-tablet">Contacts</a></li>
 					</ul>
 				</nav>
-				<button type="button" class="mobile-menu-open" data-modal-open>
+				<button type="button" class="mobile-menu-open" js-open-menu>
 					<svg class="mobile-menu-open-icon">
 						<use href="./images/symbol.svg#icon-icon-menu"></use>
 					</svg>
@@ -41,13 +41,13 @@
 				<address class="address">
 					<ul class="auth-nav">
 						<li class="item"><a href="mailto:info@devstudio.com" class="auth-nav-link">info@devstudio.com</a></li>
-						<li class="item"><a href="tel:+110001111111" class="auth-nav-link">+11 (000) 111-11-11</a></li>
+						<li class="item tablet"><a href="tel:+110001111111" class="auth-nav-link">+11 (000) 111-11-11</a></li>
 					</ul>
 				</address>
 			</div>
-			<div class="mobile-menu" data-modal>
+			<div class="mobile-menu" js-menu-container>
 				<div class="container mobile-menu-container">
-					<button class="mobile-menu-close" data-modal-close>
+					<button class="mobile-menu-close" js-close-menu>
 						<svg class="mobile-menu-close-icon">
 							<use href="./images/symbol.svg#icon-close"></use>
 						</svg>
@@ -95,7 +95,7 @@
 			</div>
 		</header>
 		<!-- About company -->
-		<!-- <main>
+		<main>
 			<section class="box-order section">
 				<div class="container">
 					<h1 class="slogan">Effective Solutions for Your Business</h1>
@@ -153,7 +153,7 @@
 					</ul>
 				</div>
 			</section>
-			<section>
+			<section class="section">
 				<div class="container rezult">
 					<h2 class="title-item">What are we doing</h2>
 					<ul class="future-rezult">
@@ -168,14 +168,19 @@
 						</li>
 					</ul>
 				</div>
-			</section> -->
-		<!-- About team -->
-		<!-- <section class="content-title section">
+			</section>
+			<!-- About team -->
+			<section class="content-title section">
 				<div class="container">
 					<h2 class="title-item">Our Team</h2>
 					<ul class="future-team">
 						<li class="list">
-							<img src="./images/photo1.jpg" width="264" alt="photo marka" />
+							<img
+								srcset="./images/photo1.jpg 1x, ./images/photo1@2x.jpg 2x"
+								src="./images/photo1.jpg"
+								width="264"
+								alt="photo marka"
+							/>
 							<div class="about-team">
 								<h3 class="future-name">Mark Guerrero</h3>
 								<p class="future-education">Product Designer</p>
@@ -212,7 +217,12 @@
 							</div>
 						</li>
 						<li class="list">
-							<img src="./images/photo2.jpg" width="264" alt="photo toma" />
+							<img
+								srcset="./images/photo2.jpg 1x, ./images/photo2@2x.jpg 2x"
+								src="./images/photo2.jpg"
+								width="264"
+								alt="photo toma"
+							/>
 
 							<div class="about-team">
 								<h3 class="future-name">Tom Ford</h3>
@@ -250,7 +260,12 @@
 							</div>
 						</li>
 						<li class="list">
-							<img src="./images/photo3.jpg" width="264" alt="photo camilii" />
+							<img
+								srcset="./images/photo3.jpg 1x, ./images/photo3@2x.jpg 2x"
+								src="./images/photo3.jpg"
+								width="264"
+								alt="photo camilii"
+							/>
 							<div class="about-team">
 								<h3 class="future-name">Camila Garcia</h3>
 								<p class="future-education">Marketing</p>
@@ -287,7 +302,12 @@
 							</div>
 						</li>
 						<li class="list">
-							<img src="./images/photo4.jpg" width="264" alt="photo daniela" />
+							<img
+								srcset="./images/photo4.jpg 1x, ./images/photo4@2x.jpg 2x"
+								src="./images/photo4.jpg"
+								width="264"
+								alt="photo daniela"
+							/>
 							<div class="about-team">
 								<h3 class="future-name">Daniel Wilson</h3>
 								<p class="future-education">UI Designer</p>
@@ -326,6 +346,7 @@
 					</ul>
 				</div>
 			</section>
+			<!-- CLIENTS -->
 			<section class="section">
 				<div class="container">
 					<h2 class="clients-item">Customers</h2>
@@ -371,9 +392,9 @@
 					</ul>
 				</div>
 			</section>
-		</main> -->
+		</main>
 		<!-- basement -->
-		<!-- <footer class="footer-main">
+		<footer class="footer-main">
 			<div class="container footer-contein">
 				<div>
 					<a href="./index.html" class="logo-bottom"><span class="logo">Web</span>Studio</a>
@@ -478,7 +499,15 @@
 				</form>
 			</div>
 		</div>
-		<script src="./modal.js"></script> -->
+		<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+			crossorigin="anonymous"
+		>
+			</script
+					<script src="./modal.js">
+		</script>
 		<script src="./mobile-menu.js"></script>
 	</body>
 </html>

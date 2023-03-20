@@ -1,9 +1,13 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width:1199px) {
 
     .container {
         width: 768px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .section {
+        margin-top: 96px;
     }
 
     .mobile-menu-open {
@@ -14,6 +18,16 @@
         display: none;
     }
 
+    .mobile-menu-nav {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .site-nav {
         display: flex;
         font-weight: 500;
@@ -21,19 +35,12 @@
         line-height: 1.5;
         padding-top: 24px;
         padding-bottom: 24px;
-        margin-left: 76px;
-    }
-
-    .header {
-        display: flex;
-    }
-
-    .site-nav .item:not(:last-child) {
-        margin-right: 40px;
+        margin-left: 120px;
+        gap: 40px;
     }
 
 
-    .header-link {
+    .header-link-tablet {
 
         color: var(--dark);
         text-decoration: none;
@@ -48,10 +55,29 @@
 
     }
 
-    .header-link:hover,
-    .header-link:focus {
+    .header-link-tablet:hover,
+    .header-link-tablet:focus {
         color: var(--pressed-state);
         text-decoration: none;
+    }
+
+
+
+    .current::after {
+        content: '';
+
+        position: relative;
+        top: 20px;
+        display: block;
+        width: 100%;
+        height: 5px;
+        border-radius: 2px;
+        background-color: var(--pressed-state);
+    }
+
+    .current {
+        color: var(--primary-brand);
+
     }
 
     .header-link::after {
@@ -76,24 +102,10 @@
         opacity: 1;
     }
 
-    .current {
-        color: var(--primary-brand);
 
-    }
-
-    .current::after {
-        content: '';
-
-        position: relative;
-        top: 24px;
-        display: block;
-        width: 100%;
-        height: 5px;
-        border-radius: 2px;
-        background-color: var(--pressed-state);
-    }
 
     .main-nav {
+        display: flex;
         align-items: center;
     }
 
@@ -119,20 +131,12 @@
         text-transform: uppercase;
     }
 
-
-
-    .auth-nav {
-        padding-top: 24px;
-        padding-bottom: 24px;
-    }
-
     .address {
         margin-left: auto;
-
     }
 
-    .auth-nav .item:not(:last-child) {
-        margin-right: 40px;
+    .auth-nav>.tablet {
+        padding-top: 12px;
     }
 
     .auth-nav-link {
@@ -144,6 +148,7 @@
         text-decoration: none;
         cursor: pointer;
 
+
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -153,4 +158,250 @@
     .auth-nav-link:focus {
         color: var(--pressed-state);
     }
+
+    /* Section FON */
+
+
+    .box-order {
+        text-align: center;
+    }
+
+    .box-order {
+        padding: 112px 0;
+    }
+
+    .box-order {
+        background-image: linear-gradient(to right,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/tablet/fon-tab.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        max-width: 768px;
+        height: 436px;
+        margin: 0 auto;
+
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .box-order {
+            background-image: linear-gradient(to right,
+                    rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/tablet/fon-tab@2x.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            max-width: 768px;
+            height: 436px;
+            margin: 0 auto;
+        }
+    }
+
+    .slogan {
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.1;
+        color: var(--white-color);
+        letter-spacing: 0.02em;
+        width: 496px;
+        margin: 0 auto;
+    }
+
+    .button-main {
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        color: var(--white-color);
+        background: var(--primary-brand);
+        cursor: pointer;
+        letter-spacing: 0.04em;
+        padding: 16px 32px;
+        display: inline-block;
+        text-align: center;
+        margin-top: 36px;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
+
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .button-main:hover,
+    .button-main:focus {
+        background-color: var(--pressed-state);
+    }
+
+    .contein-list {
+        display: none;
+    }
+
+
+    .future {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        padding: 0;
+    }
+
+    .future>.list:nth-child(n+3) {
+        margin-top: 48px;
+    }
+
+    .future-item {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.2;
+        color: var(--modal-overlay);
+        letter-spacing: 0.02em;
+        width: 356px;
+
+    }
+
+    .future-text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        color: var(--text);
+        letter-spacing: 0.02em;
+        width: 356px;
+        margin-top: 8px;
+    }
+
+    .rezult {
+        display: none;
+    }
+
+    /* ---------ABOUT TEAM------- */
+
+    .title-item {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.1;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        padding-top: 96px;
+    }
+
+
+    .content-title {
+        background-color: var(--light);
+    }
+
+    .future-team {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+        padding-top: 72px;
+        padding-bottom: 96px;
+
+    }
+
+    .future-team>.list {
+        background-color: var(--white-color);
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        border-radius: 0px 0px 4px 4px;
+    }
+
+    .about-team {
+        text-align: center;
+        padding: 32px 0;
+    }
+
+    .future-education {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+
+    .content-find {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .content-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        Width: 40px;
+        Height: 40px;
+        background-color: var(--primary-brand);
+        border-radius: 50%;
+
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .content-link:hover,
+    .content-link:focus {
+        background-color: var(--pressed-state);
+    }
+
+    .content-item {
+        width: 16px;
+        height: 16px;
+    }
+
+    /* /* ------Customers---------- */
+    .clients-item {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.1;
+        color: var(--modal-overlay);
+        text-align: center;
+        letter-spacing: 0.02em;
+
+    }
+
+    .clients-choice {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 72px;
+        gap: 24px;
+    }
+
+    .clients-choice>.list:nth-child(n+4) {
+        margin-top: 48px;
+    }
+
+    .clients {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid currentColor;
+        color: #8E8F99;
+        border-radius: 4px;
+        height: 88px;
+        width: 168px;
+
+
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .clients-list {
+        width: 104px;
+        height: 56px;
+        fill: currentColor;
+
+    }
+
+    .clients:hover,
+    .clients:focus {
+        color: var(--pressed-state);
+    }
+
 }
