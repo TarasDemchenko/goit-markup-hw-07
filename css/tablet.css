@@ -22,6 +22,7 @@
         display: none;
     }
 
+    /* --------------HEADER TABLET----------- */
     .header {
         display: flex;
         align-items: center;
@@ -102,8 +103,6 @@
         opacity: 1;
     }
 
-
-
     .main-nav {
         display: flex;
         align-items: center;
@@ -159,7 +158,9 @@
         color: var(--pressed-state);
     }
 
-    /* Section FON */
+    /* --------------HEADER TABLET----------- */
+
+    /* ------SECTION HERO TABLET---------*/
 
 
     .box-order {
@@ -238,9 +239,14 @@
         background-color: var(--pressed-state);
     }
 
+    /* ------SECTION HERO TABLET---------*/
+
+    /* ------CONTEIN TABLET-------- */
     .contein-list {
         display: none;
     }
+
+    /* ------CONTEIN TABLET-------- */
 
 
     .future {
@@ -274,11 +280,18 @@
         margin-top: 8px;
     }
 
+    /* ------CONTEIN TABLET-------- */
+
+    /* -------WHAT ARE WE DOING TABLET-------- */
     .rezult {
         display: none;
     }
 
-    /* ---------ABOUT TEAM------- */
+    /* -------WHAT ARE WE DOING TABLET-------- */
+
+
+
+    /* ---------OUR TEAM TABLET------- */
 
     .title-item {
         font-weight: 700;
@@ -353,7 +366,9 @@
         height: 16px;
     }
 
-    /* /* ------Customers---------- */
+    /* ---------OUR TEAM TABLET------- */
+
+    /* ------CUSTOMERS TABLET---------- */
 
     .section-clients {
         padding-bottom: 96px;
@@ -410,7 +425,9 @@
         color: var(--pressed-state);
     }
 
-    /* ------------FOOTER--------- */
+    /* ------CUSTOMERS TABLET---------- */
+
+    /* ------------FOOTER TABLET--------- */
     .subtitle {
         font-size: 16px;
         line-height: 1.5;
@@ -437,7 +454,9 @@
         background: var(--dark);
     }
 
-    /* ------content footer------------ */
+    /* ------------FOOTER TABLET--------- */
+
+    /* ------CONTENT FOOTER TABLET------------ */
 
     .footer-contein {
         display: flex;
@@ -488,8 +507,9 @@
         background-color: #31D0AA;
     }
 
-    /* ------------FOOTER--------- */
-    /* ---------SUBSCRIBE-------- */
+    /* ------CONTENT FOOTER TABLET------------ */
+
+    /* --------FOOTER EMAIL SEND TABLET-------- */
 
     .subscribe-blok {
         padding-top: 16px;
@@ -556,5 +576,5 @@
         background-color: var(--pressed-state);
     }
 
-    /* ---------SUBSCRIBE-------- */
+    /* --------FOOTER EMAIL SEND TABLET-------- */
 }

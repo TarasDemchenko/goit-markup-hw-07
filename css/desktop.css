@@ -27,7 +27,7 @@
         padding-left: 40px;
     }
 
-    /* --------------HEADER----------- */
+    /* --------------HEADER DESKTOP----------- */
     .header {
         display: flex;
     }
@@ -167,9 +167,9 @@
         color: var(--pressed-state);
     }
 
-    /* --------------HEADER----------- */
+    /* --------------HEADER DESKTOP----------- */
 
-    /* ------Section FON ---------*/
+    /* ------SECTION HERO DESKTOP---------*/
 
     .box-order {
         text-align: center;
@@ -248,9 +248,9 @@
         background-color: var(--pressed-state);
     }
 
-    /* ------Section FON ---------*/
+    /* ------SECTION HERO DESKTOP---------*/
 
-
+    /* ------CONTEIN DESCTOP-------- */
     .contein {
         display: flex;
         justify-content: center;
@@ -292,7 +292,9 @@
         margin-top: 8px;
     }
 
-    /* -------section what are we doing-------- */
+    /* ------CONTEIN DESCTOP-------- */
+
+    /* -------WHAT ARE WE DOING DESKTOP-------- */
 
     .title-item {
         font-weight: 700;
@@ -317,8 +319,9 @@
         margin-right: 24px;
     }
 
-    /* --------section Our team-------- */
+    /* -------WHAT ARE WE DOING DESKTOP-------- */
 
+    /* --------OUR TEAM DESKTOP-------- */
 
     .content-title {
         background-color: var(--light);
@@ -381,7 +384,9 @@
         height: 16px;
     }
 
-    /* /* ------Customers---------- */
+    /* --------OUR TEAM DESKTOP-------- */
+
+    /* ------CUSTOMERS DESKTOP---------- */
 
     .clients-item {
         font-weight: 700;
@@ -431,8 +436,10 @@
         color: var(--pressed-state);
     }
 
-    /* ------Customers---------- */
-    /* -------------footer----------- */
+    /* ------CUSTOMERS DESKTOP---------- */
+
+
+    /* -------------FOOTER DESKTOP----------- */
     .subtitle {
         font-size: 16px;
         line-height: 1.5;
@@ -459,7 +466,9 @@
         background: var(--dark);
     }
 
-    /* ------content footer------------ */
+    /* -------------FOOTER DESKTOP----------- */
+
+    /* ------CONTENT FOOTER DESKTOP------------ */
 
     .footer-contein {
         display: flex;
@@ -508,7 +517,10 @@
         background-color: #31D0AA;
     }
 
-    /* -------Portfolio_______ */
+    /* ------CONTENT FOOTER DESKTOP------------ */
+
+
+    /* -------PORTFOLIO DESKTOP--------- */
 
     header {
         border-bottom: 1px solid #E7E9FC;
@@ -632,7 +644,9 @@
         transform: translateY(0);
     }
 
-    /* -----------backdrop-------- */
+    /* -------PORTFOLIO DESKTOP--------- */
+
+    /* -----------BACKDROP DASKTOP-------- */
 
 
     .backdrop {
@@ -707,7 +721,9 @@
         fill: var(--white-color);
     }
 
-    /* ------------Form------------------- */
+    /* -----------BACKDROP DASKTOP-------- */
+
+    /* ------------FORM ODER SERVICE DASKTOP------------ */
 
     .form-header {
         font-weight: 500;
@@ -879,7 +895,9 @@
         background-color: var(--pressed-state);
     }
 
-    /* --------foter email----- */
+    /* ------------FORM ODER SERVICE DASKTOP------------ */
+
+    /* --------FOOTER EMAIL SEND DESKTOP-------- */
 
 
     .subscribe-form {
@@ -947,4 +965,6 @@
     .subscribe-btn:focus {
         background-color: var(--pressed-state);
     }
+
+    /* --------FOOTER EMAIL SEND-------- */
 }

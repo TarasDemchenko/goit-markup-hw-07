@@ -8,9 +8,10 @@
     }
 
     .section {
-        margin-top: 96px;
+        padding-top: 96px;
     }
 
+    /* ----------HEADER-MOBILE AND BURGER---------- */
     .header {
         display: flex;
         justify-content: space-between;
@@ -68,6 +69,8 @@
 
     .mobile-menu {
         position: fixed;
+        display: flex;
+        flex-direction: column;
         width: 100%;
         height: 100%;
         top: 0;
@@ -122,7 +125,8 @@
     }
 
     .mobile-menu-nav>.item:not(:first-child) {
-        padding-top: 40px;
+        /* padding-top: 40px; */
+        margin-top: auto;
     }
 
     .header-link {
@@ -209,7 +213,8 @@
         height: 16px;
     }
 
-    /* Section FON */
+    /* ----------HEADER-MOBILE AND BURGER---------- */
+    /* ---------SECTION HERO-MOBILE----------- */
 
     .box-order {
         text-align: center;
@@ -287,20 +292,17 @@
         background-color: var(--pressed-state);
     }
 
-    /* 
-    .logo-bottom {
-        font-family: 'Raleway';
-        font-weight: 800;
-        font-size: 18px;
-        line-height: 1.7;
-        color: var(--light);
-        text-decoration: none;
-        text-transform: uppercase;
-    } */
+    /* ---------SECTION HERO-MOBILE----------- */
+
+    /* ------CONTEIN MOBILE-------- */
     .contein-list {
         display: none;
     }
 
+    /* ------CONTEIN MOBILE-------- */
+
+
+    /* ------CONTEIN MOBILE-------- */
     .future>.list {
         display: inline-block;
     }
@@ -333,11 +335,18 @@
         margin: 8px 16px;
     }
 
+    /* ------CONTEIN MOBILE-------- */
+
+    /* -------WHAT ARE WE DOING MOBILE-------- */
     .rezult {
         display: none;
     }
 
-    /* ---------------ABOUT TEAM------------ */
+    /* -------WHAT ARE WE DOING MOBILE-------- */
+
+
+
+    /* -----------OUR TEAM MOBILE------------ */
     .content-title {
         background-color: var(--light);
     }
@@ -414,9 +423,9 @@
         height: 16px;
     }
 
-    /* ---------------ABOUT TEAM------------ */
+    /* -----------OUR TEAM MOBILE------------ */
 
-    /* ------Customers---------- */
+    /* ------CUSTOMERS MOBILE---------- */
     .clients-item {
         font-weight: 700;
         font-size: 36px;
@@ -468,8 +477,9 @@
         color: var(--pressed-state);
     }
 
-    /* ------Customers---------- */
-    /* ------------FOOTER--------- */
+    /* ------CUSTOMERS MOBILE---------- */
+
+    /* ------------FOOTER MOBILE--------- */
     .footer-contein {
         display: flex;
         flex-direction: column;
@@ -553,7 +563,10 @@
         background-color: #31D0AA;
     }
 
-    /* ---------SUBSCRIBE-------- */
+    /* ------------CONTENT FOOTER MOBILE--------- */
+
+
+    /* --------FOOTER EMAIL SEND MOBILE-------- */
     .subscribe-form {
         text-align: center;
 
@@ -627,5 +640,5 @@
         background-color: var(--pressed-state);
     }
 
-    /* ------------FOOTER--------- */
+    /* --------FOOTER EMAIL SEND MOBILE-------- */
 }
