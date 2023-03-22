@@ -125,7 +125,7 @@
     }
 
     .mobile-menu-nav>.item:not(:first-child) {
-        /* padding-top: 40px; */
+        padding-top: 40px;
         margin-top: auto;
     }
 
@@ -228,7 +228,7 @@
         background-image: linear-gradient(to right,
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url(../images/mobile/fon.jpg);
+            url(/images/mobile/fon.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -246,7 +246,7 @@
             background-image: linear-gradient(to right,
                     rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
-                url(../images/mobile/fon@2x.jpg);
+                url(/images/mobile/fon@2x.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -304,7 +304,8 @@
 
     /* ------CONTEIN MOBILE-------- */
     .future>.list {
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
     }
 
     .future>.list:not(:first-child) {
@@ -442,12 +443,10 @@
         justify-content: center;
         padding-top: 72px;
         padding-bottom: 96px;
-        gap: 16px;
+        column-gap: 16px;
+        row-gap: 72px;
     }
 
-    .clients-choice>.list:nth-child(n+3) {
-        padding-top: 48px;
-    }
 
     .clients {
         display: flex;
@@ -479,7 +478,7 @@
 
     /* ------CUSTOMERS MOBILE---------- */
 
-    /* ------------FOOTER MOBILE--------- */
+    /* ------------CONTENT FOOTER MOBILE--------- */
     .footer-contein {
         display: flex;
         flex-direction: column;
@@ -641,4 +640,209 @@
     }
 
     /* --------FOOTER EMAIL SEND MOBILE-------- */
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 25px;
+        padding-bottom: 26px;
+    }
+
+    .mobile-menu-open-portfolio {
+        background-color: transparent;
+        padding: 0;
+        height: 22px;
+        width: 32px;
+        line-height: 0;
+    }
+
+    .mobile-menu-open-icon-portfolio {
+        width: 32px;
+        height: 22px;
+    }
+
+    .site-nav {
+        display: none;
+    }
+
+    .address {
+        display: none;
+    }
+
+    .main-nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        color: var(--primary-brand);
+        font-family: 'Raleway';
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.3;
+        text-decoration: none;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+
+    .logo-next {
+        color: var(--modal-overlay);
+        font-family: 'Raleway';
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.3;
+        text-decoration: none;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+
+    /* ---------MOBILE MENU BURGER------- */
+
+
+    .mobile-menu-portfolio {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: white;
+        z-index: 1000;
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+
+        transition-property: opacity, visibility;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .mobile-menu-portfolio.is-hidden-p {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+
+    }
+
+    .mobile-menu-container-portfolio {
+        position: relative;
+        width: 480px;
+    }
+
+    .mobile-menu-close-portfolio {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        width: 24px;
+        height: 24px;
+        border: 1px solid #2E2F42;
+        line-height: 0;
+        background: #E7E9FC;
+        padding: 0;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-menu-close-icon-portfolio {
+        width: 8px;
+        height: 8px;
+    }
+
+    .mobile-menu-nav-portfolio {
+        padding-top: 80px;
+    }
+
+    .mobile-menu-nav-portfolio>.item:not(:first-child) {
+        padding-top: 40px;
+
+    }
+
+    .header-link {
+        margin-left: 40px;
+        color: var(--dark);
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .header-link:hover,
+    .header-link:focus {
+        color: var(--pressed-state);
+        text-decoration: none;
+    }
+
+    .mobile-menu-address-portfolio {
+        display: block;
+        padding-top: 284px;
+        padding-left: 40px;
+    }
+
+    .auth-nav-link-mail {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #434455;
+    }
+
+    .auth-nav-link-mail:hover,
+    .auth-nav-link-mail:focus {
+        color: #4D5AE5;
+    }
+
+    .auth-nav-link-tel {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #434455;
+    }
+
+    .item-tel {
+        padding-top: 40px;
+    }
+
+    .content-find-mobile-portfolio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 56px;
+        padding-top: 48px;
+
+    }
+
+    .content-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        Width: 40px;
+        Height: 40px;
+        background-color: var(--primary-brand);
+        border-radius: 50%;
+
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .content-link:hover,
+    .content-link:focus {
+        background-color: var(--pressed-state);
+    }
+
+    .content-item {
+        width: 16px;
+        height: 16px;
+    }
+
+    /* ---------MOBILE MENU BURGER------- */
 }
