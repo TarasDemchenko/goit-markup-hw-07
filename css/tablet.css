@@ -173,7 +173,7 @@
         background-image: linear-gradient(to right,
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url(../images/tablet/fon-tab.jpg);
+            url(../images/fon-tab.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -191,7 +191,7 @@
             background-image: linear-gradient(to right,
                     rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
-                url(../images/tablet/fon-tab@2x.jpg);
+                url(../images/fon-tab@2x.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;

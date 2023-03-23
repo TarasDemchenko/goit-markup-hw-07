@@ -184,7 +184,7 @@
         background-image: linear-gradient(to right,
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
-            url(../images/dekstop/fon-dek.jpg);
+            url(../images/fon-dek.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -202,7 +202,7 @@
             background-image: linear-gradient(to right,
                     rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
-                url(../images/dekstop/fon-dek@2x.jpg);
+                url(../images/fon-dek@2x.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
