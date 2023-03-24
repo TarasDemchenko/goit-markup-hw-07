@@ -2,14 +2,14 @@
 
 
     .container {
-        width: 480px;
-        margin-left: auto;
-        margin-right: auto;
+        width: 428px;
+        /* margin-left: auto;
+        margin-right: auto; */
     }
 
-    .section {
+    /* .section {
         padding-top: 96px;
-    }
+    } */
 
     /* ----------HEADER-MOBILE AND BURGER---------- */
     .header {
@@ -68,6 +68,7 @@
     }
 
     .mobile-menu {
+        /* position: relative; */
         position: fixed;
         display: flex;
         flex-direction: column;
@@ -94,10 +95,10 @@
 
     }
 
-    .mobile-menu-container {
+    /* .mobile-menu-container {
         position: relative;
         width: 480px;
-    }
+    } */
 
     .mobile-menu-close {
         position: absolute;
@@ -121,7 +122,7 @@
     }
 
     .mobile-menu-nav {
-        padding-top: 80px;
+        margin-top: 80px;
     }
 
     .mobile-menu-nav>.item:not(:first-child) {
@@ -151,7 +152,8 @@
 
     .mobile-menu-address {
         display: block;
-        padding-top: 284px;
+        margin-top: auto;
+        /* padding-top: 284px; */
         padding-left: 40px;
     }
 
@@ -185,7 +187,7 @@
         justify-content: center;
         align-items: center;
         gap: 56px;
-        padding-top: 48px;
+        margin-top: 48px;
 
     }
 
@@ -232,7 +234,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        max-width: 480px;
+        max-width: 428px;
         height: 432px;
         margin: 0 auto;
 
@@ -247,12 +249,12 @@
                     rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
                 url(../images/fon@2x.jpg);
-            background-repeat: no-repeat;
+            /* background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
             max-width: 480px;
             height: 432px;
-            margin: 0 auto;
+            margin: 0 auto; */
         }
     }
 
@@ -262,7 +264,7 @@
         line-height: 1.2;
         color: var(--white-color);
         letter-spacing: 0.02em;
-        width: 320px;
+        max-width: 320px;
         margin: 0 auto;
     }
 
@@ -343,6 +345,10 @@
         display: none;
     }
 
+    .rezult {
+        display: none;
+    }
+
     /* -------WHAT ARE WE DOING MOBILE-------- */
 
 
@@ -363,13 +369,17 @@
 
     .future-team {
         display: flex;
+        padding-top: 72px;
+        gap: 72px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
     .future-team>.list {
-        padding-top: 72px;
+        background-color: var(--white-color);
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        border-radius: 0px 0px 4px 4px;
     }
 
     .about-team {
@@ -442,7 +452,6 @@
         flex-wrap: wrap;
         justify-content: center;
         padding-top: 72px;
-        padding-bottom: 96px;
         column-gap: 16px;
         row-gap: 72px;
     }
@@ -577,7 +586,7 @@
     }
 
     .subscribe-blok {
-        display: flex;
+        /* display: flex; */
         flex-direction: column;
         text-align: center;
         justify-content: center;
@@ -598,7 +607,7 @@
     }
 
     .subscribe-in {
-        width: 398px;
+        width: 100%;
         height: 40px;
         outline: none;
         border: 1px solid #FFFFFF;
@@ -853,7 +862,7 @@
 
     /* PORTFOLIO FOOTER */
     .footer-contein {
-        display: flex;
+        /* display: flex; */
         flex-direction: column;
         align-items: center;
         padding: 0px;
@@ -895,13 +904,13 @@
     }
 
     .content-footer-item {
-        display: flex;
+        /* display: flex; */
         gap: 16px;
         padding-top: 16px;
     }
 
     .content-footer-link {
-        display: flex;
+        /* display: flex; */
         justify-content: center;
         align-items: center;
         Width: 40px;
