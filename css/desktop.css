@@ -201,12 +201,12 @@
                     rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
                 url(../images/fon-dek@2x.jpg);
-            background-repeat: no-repeat;
+            /* background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
             max-width: 1440px;
             height: 600px;
-            margin: 0 auto;
+            margin: 0 auto; */
         }
     }
 
@@ -489,7 +489,7 @@
         align-items: center;
         Width: 40px;
         Height: 40px;
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: var(--primary-brand);
         border-radius: 50%;
 
         transition-property: background-color;

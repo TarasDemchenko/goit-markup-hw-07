@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) and (max-width:1199px) {
+@media screen and (min-width: 768px) and (max-width:1157px) {
 
     .container {
         width: 768px;
@@ -192,12 +192,12 @@
                     rgba(46, 47, 66, 0.7),
                     rgba(46, 47, 66, 0.7)),
                 url(../images/fon-tab@2x.jpg);
-            background-repeat: no-repeat;
+            /* background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
             max-width: 768px;
             height: 436px;
-            margin: 0 auto;
+            margin: 0 auto; */
         }
     }
 
@@ -478,7 +478,7 @@
         align-items: center;
         Width: 40px;
         Height: 40px;
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: var(--primary-brand);
         border-radius: 50%;
 
         transition-property: background-color;
@@ -627,7 +627,7 @@
 
     }
 
-    .current::after {
+    /* .current::after {
         content: '';
 
         position: relative;
@@ -637,10 +637,10 @@
         height: 5px;
         border-radius: 2px;
         background-color: var(--pressed-state);
-    }
+    } */
 
 
-    .header-link::after {
+    /* .header-link::after {
         content: '';
 
         position: absolute;
@@ -660,7 +660,7 @@
     .header-link:hover::after,
     .header-link:focus::after {
         opacity: 1;
-    }
+    } */
 
     .main-nav {
         display: flex;
