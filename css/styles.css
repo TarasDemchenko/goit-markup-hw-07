@@ -382,7 +382,7 @@ a {
     gap: 40px;
 } */
 
-.header-link {
+.item>.header-link {
 
     color: var(--dark);
     text-decoration: none;
@@ -397,11 +397,13 @@ a {
 
 }
 
-.header-link:hover,
-.header-link:focus {
+.item>.header-link:hover,
+.item>.header-link:focus {
     color: var(--pressed-state);
     text-decoration: none;
 }
+
+
 
 .site-nav>.header-link::after {
     content: '';
@@ -425,12 +427,12 @@ a {
     opacity: 1;
 }
 
-.current {
+.header-link.current {
     color: var(--primary-brand);
 
 }
 
-.current::after {
+.header-link.current::after {
     content: '';
 
     position: relative;
