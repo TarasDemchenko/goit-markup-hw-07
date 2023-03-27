@@ -23,13 +23,13 @@
     }
 
     /* --------------HEADER TABLET----------- */
-    .header {
+    /* .header {
         display: flex;
         align-items: center;
         justify-content: center;
-    }
+    } */
 
-    .site-nav {
+    /* .site-nav {
         display: flex;
         font-weight: 500;
         font-size: 16px;
@@ -99,7 +99,7 @@
         height: 5px;
         border-radius: 2px;
         background-color: var(--pressed-state);
-    }
+    } */
 
     .main-nav {
         display: flex;
@@ -312,8 +312,7 @@
         justify-content: center;
         column-gap: 24px;
         row-gap: 64px;
-        padding-top: 72px;
-        padding-bottom: 96px;
+        margin-top: 72px;
 
     }
 
@@ -369,9 +368,9 @@
 
     /* ------CUSTOMERS TABLET---------- */
 
-    .section-clients {
+    /* .section-clients {
         padding-bottom: 96px;
-    }
+    } */
 
     .clients-item {
         font-weight: 700;
@@ -460,12 +459,15 @@
     .footer-contein {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        /* justify-content: center; */
+        gap: 72px 24px;
+        max-width: 530px;
     }
 
+    /* 
     .content-footer {
         margin-left: 24px;
-    }
+    } */
 
     .content-footer-item {
         display: flex;
@@ -520,7 +522,6 @@
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #FFFFFF;
-        padding-top: 72px;
     }
 
     .subscribe-in::placeholder {
@@ -583,13 +584,13 @@
         display: none;
     }
 
-    .header {
+    /* .header {
         display: flex;
         align-items: center;
         justify-content: center;
-    }
+    } */
 
-    .site-nav {
+    /* .site-nav {
         display: flex;
         font-weight: 500;
         font-size: 16px;
@@ -598,10 +599,10 @@
         padding-bottom: 24px;
         margin-left: 120px;
         gap: 40px;
-    }
+    } */
 
 
-    .header-link-tablet {
+    /* .header-link-tablet {
 
         color: var(--dark);
         text-decoration: none;
@@ -625,7 +626,7 @@
     .current {
         color: var(--primary-brand);
 
-    }
+    } */
 
     /* .current::after {
         content: '';
